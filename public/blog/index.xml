@@ -1,0 +1,19 @@
+<rss version="2.0">
+  <channel>
+    <title>ærohue</title>
+    <link>https://aerohue.party</link>
+    <description>ærohue - Blog</description>
+    <generator>Zine -- https://zine-ssg.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 08 May 2026 18:36:22 +0000</lastBuildDate>
+    
+      <item>
+        <title>not a first blog</title>
+        <description>&lt;p&gt;someday I’ll find something interesting enough to blog about.&lt;/p&gt;</description>
+        <link>https://aerohue.party/blog/first-post/</link>
+        <pubDate>Sun, 12 Feb 1821 17:33:06 +0000</pubDate>
+        <guid>https://aerohue.party/blog/first-post/</guid>
+      </item>
+    
+  </channel>
+</rss>
