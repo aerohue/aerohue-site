@@ -1,0 +1,9 @@
+---
+.title = "not a first blog",
+.date = @date("1821-02-12T17:33:06"),
+.author = "aeae",
+.layout = "post.shtml",
+.draft = false,
+--- 
+
+someday I'll find something interesting enough to blog about.

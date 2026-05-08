@@ -1,0 +1,18 @@
+---
+.title = "log archive - 1",
+.date = @date("2026-00-00T00:00:00"),
+.author = "aeae",
+.layout = "devlog.shtml",
+.draft = false,
+--- 
+[]($section.id('about'))
+## About the log
+this is where 99% of news regarding things I do shall lie
+
+feel free to [subscribe the latest devlog via RSS]($link.page('devlog').alternative('rss')) :]
+
+this page lists entries for the year 2026, for past or future entries consult the
+[devlog archive](/devlog/).
+
+## [hello ae site]($section.id("2026-05-08T18:00:00"))
+this is the first ever log here. setting up ziggy in emacs was a pain,,,,,,,,,

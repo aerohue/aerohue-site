@@ -1,0 +1,15 @@
+---
+.title = "log archive",
+.date = @date("1990-01-01T00:00:00"),
+.author = "aeae",
+.layout = "devlog-archive.shtml",
+.alternatives = [{ 
+    .name = "rss",
+    .layout = "devlog.xml", 
+    .output = "index.xml",
+}],
+.draft = false,
+---
+this is where 99% of news regarding things I do shall lie
+
+you can also access this [via RSS feed]($link.alternative('rss')) :)

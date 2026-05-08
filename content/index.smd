@@ -1,0 +1,10 @@
+---
+.title = "homepage",
+.date = @date("2026-05-08T17:39:00"),
+.author = "aeae",
+.layout = "index.shtml",
+.draft = false,
+---
+
+hi.
+feel free to snoop around the site.

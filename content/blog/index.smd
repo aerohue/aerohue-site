@@ -1,0 +1,16 @@
+---
+.title = "blog log",
+.date = @date("1820-04-01T17:32:02"),
+.author = "aeae",
+.layout = "blog.shtml",
+.alternatives = [{ 
+    .name = "rss",
+    .layout = "blog.xml", 
+    .output = "index.xml",
+}],
+.draft = false,
+--- 
+
+this page defines the blog section and lists all posts in it.
+
+the blog section also has an [RSS feed]($link.alternative('rss')). :]

@@ -1,0 +1,12 @@
+---
+.title = "about",
+.date = @date("1990-01-01T00:00:00"),
+.author = "aeae",
+.layout = "index.shtml",
+.draft = false,
+--- 
+
+# bio
+aerohue (stylised in lowercase) is the genre defying project of ae.
+
+this site (built on [zine](https://zine-ssg.io)) is the only one to officially represent me.
