@@ -1,85 +1,91 @@
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #ddd;
-  font-family: "Verdana", sans-serif;
+/* variables*/
+:root{
+  --g-bg1:#181226;
+  --g-bg2:#131A18;
+  --text:#e9eef6;
+  --muted:#CFC2FF;
+  --a1:#ABFFE9;
+  --g1:#c8b7ff;
+  --g2:#9b8cff;
+  --ag:linear-gradient(90deg,var(--g1),var(--g2));
+  --maxw:920px;--pad:20px;--shadow:0 8px 20px rgba(2,6,15,0.6);--ui:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial;--serif:"Georgia",serif;--t:.18s
 }
 
-b,
-strong {
-  color: #fff;
+html,body{height:100%;}
+html{
+  background: linear-gradient(180deg, var(--g-bg1) 0%, var(--g-bg2) 100%);
+  color:var(--muted);
+  font-family:var(--serif);
+  -webkit-font-smoothing:antialiased;
+  display:flex;
+  justify-content:center;
+  padding:36px 18px;
+}
+body{
+  width:100%;
+  max-width:var(--maxw);
+  padding:var(--pad);
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  color:var(--text);
+  background:transparent;
+  border-radius:0;
+}
+/* header */.site-title{font-family:var(--ui);font-weight:600;font-size:clamp(1.4rem,2.2vw,2rem);color:var(--text);margin:0 0 4px 0}
+.site-subtitle{margin:0;color:var(--muted);font-size:.95rem;font-family:var(--serif)}
+
+/* typography */
+h1,h2,h3,h4,h5{color:var(--text);font-family:var(--ui);margin:0 0 .35rem 0;font-weight:600}
+p{color:var(--muted);line-height:1.6;margin:0 0 1rem 0}
+/* links use baby cyan for accents */
+a{color:var(--a1);text-decoration:none;transition:color var(--t)}
+a:hover{filter:brightness(1.03)}
+strong,b{color:var(--text)}
+
+/* navigation */
+nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+nav a{padding:8px 12px;border-radius:0;color:var(--muted);background:transparent;font-weight:600;border:1px solid transparent}
+nav a[aria-current="page"]{color:var(--text);background:linear-gradient(180deg,rgba(200,183,255,0.06),rgba(200,183,255,0.03));border-color:rgba(200,183,255,0.06)}
+
+/* content + sidebar */
+.container{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}
+@media (max-width:980px){.container{grid-template-columns:1fr}}
+
+/* content cards */
+.block{background:linear-gradient(180deg,rgba(255,255,255,0.012),transparent);padding:16px;border:1px solid rgba(255,255,255,0.03);box-shadow:var(--shadow);color:var(--text);border-radius:0}
+.block h1{font-size:1rem;margin:0 0 8px 0}
+.small{font-size:.9rem;color:var(--muted)}
+
+
+/* accent */
+.accent{
+  color:var(--a1);
+  background-image:var(--ag);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  padding:4px 8px;
+  display:inline-block;
+  font-weight:600;
+  font-size:.9rem;
+  border-radius:0;
 }
 
-a {
-  color: #eee;
+/* buttons */
+button,.btn{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.06);padding:8px 12px;cursor:pointer;transition:transform var(--t),background var(--t);border-radius:0}
+button.primary,.btn.primary{
+  background-image:var(--ag);
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  border-color:rgba(200,183,255,0.12);
+  color:#021018;
+  font-weight:700;
 }
+button:hover,.btn:hover{transform:translateY(-2px)}
+input,textarea{width:100%;padding:10px 12px;border-radius:0;border:1px solid rgba(255,255,255,0.03);background:rgba(255,255,255,0.01);color:var(--text);outline:none;font-size:1rem}
 
-html {
-  color: #ccc;
-  font-family: "Georgia", serif;
-  font-size: 1.2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #111;
-}
+/* footer */
+footer{margin-top:8px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.95rem;padding-top:12px;border-top:1px solid rgba(255,255,255,0.02);border-radius:0}
 
-body {
-  width: 800px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.site-title {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  /* text-align: center; */
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.block {
-  border: 1px dotted white;
-  padding: 5px 15px;
-  margin: 0 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.block h1 {
-  font-size: 1em;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.small {
-  font-size: 0.8em;
-}
-
-.wave {
-  background: #111;
-  color: #fff;
-  text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
-}
-
-footer {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer hr {
-  width: 100%;
-}
+/* focus ring uses a soft purple derived from the gradient */
+:focus{box-shadow:0 0 0 4px rgba(155,140,255,0.08);outline:none}
