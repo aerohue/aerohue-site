@@ -21,6 +21,9 @@ html{
   justify-content:center;
   padding:36px 18px;
 }
+
+img { max-width: 50%; object-fit: cover; }
+
 body{
   width:100%;
   max-width:var(--maxw);
@@ -45,7 +48,7 @@ strong,b{color:var(--text)}
 
 /* navigation */
 nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-nav a{padding:8px 12px;border-radius:0;color:var(--muted);background:transparent;font-weight:600;border:1px solid transparent}
+nav a{padding:32px 7%;border-radius:0;color:var(--muted);background:transparent;font-weight:1200;}
 nav a[aria-current="page"]{color:var(--text);background:linear-gradient(180deg,rgba(200,183,255,0.06),rgba(200,183,255,0.03));border-color:rgba(200,183,255,0.06)}
 
 /* content + sidebar */
