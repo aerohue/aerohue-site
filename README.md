@@ -16,4 +16,4 @@ minimalistic but pretty interface
 - [superhtml](https://github.com/kristoff-it/superhtml)
 - [ziggy](https://github.com/kristoff-it/ziggy)
 - [krita](https://invent.kde.org/graphics/krita)
-![](https://github.com/aerohue/aerohue-site/blob/main/assets/webscr2.png)
+<img src="https://github.com/aerohue/aerohue-site/blob/main/assets/webscr2.png" width="20%"/>
