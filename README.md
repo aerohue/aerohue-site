@@ -2,10 +2,10 @@
 the only official github repository for my website 
 
 ## features
-blogs with an RSS feed
-logs with an RSS feed
-minimalistic but pretty interface
-&the impeccably threatening ae mascot
+blogs with an RSS feed  
+logs with an RSS feed  
+minimalistic but pretty interface  
+&the impeccably threatening ae mascot  
 
 ![](https://github.com/aerohue/aerohue-site/blob/main/assets/webscr1.png)
 
